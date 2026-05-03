@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch using modern tools.",
+    "image": "https://i.ibb.co/4ggyqjvW/web-developments-1.webp",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Advanced JavaScript Mastery",
+    "instructor": "Sarah Jenkins",
+    "duration": "15 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Deep dive into ES6+, Closures, Promises, and Async/Await.",
+  "image": "https://i.ibb.co/1YxshGhY/71l-BExc-ZLZL-UF1000-1000-QL80.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 3,
+    "title": "React.js & Redux for Professionals",
+    "instructor": "David Miller",
+    "duration": "25 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Build scalable frontend applications with React and state management.",
+  "image": "https://i.ibb.co/WvFqgdry/React-redux-2.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 4,
+    "title": "Python for Data Science",
+    "instructor": "Dr. Angela Yu",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Master Python libraries like Pandas, NumPy, and Matplotlib.",
+  "image": "https://i.ibb.co/RThcT1nX/DS-Python.jpg",
+    "category": "Data Science"
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Design Essentials",
+    "instructor": "Gary Simon",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn Figma and Adobe XD to create stunning user interfaces.",
+  "image": "https://i.ibb.co/XrX5j4qz/images.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 6,
+    "title": "Node.js & MongoDB Backend Development",
+    "instructor": "Brad Traversy",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Create robust REST APIs and manage NoSQL databases.",
+  "image": "https://i.ibb.co/h6LnRPk/course-1745756529.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 7,
+    "title": "Machine Learning A-Z",
+    "instructor": "Kirill Eremenko",
+    "duration": "40 hours",
+    "rating": 4.7,
+    "level": "Advanced",
+    "description": "Implement ML algorithms using Scikit-Learn and TensorFlow.",
+  "image": "https://i.ibb.co/SwmNGG8L/6f18f2db-d032-4bc9-843e-1fbb5fb27bca-cover.jpg",
+    "category": "Data Science"
+  },
+  {
+    "id": 8,
+    "title": "Digital Marketing Strategy 2026",
+    "instructor": "Rob Percival",
+    "duration": "22 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Master SEO, SEM, and social media advertising techniques.",
+  "image": "https://i.ibb.co/HLcx9nMk/1761418471470.png",
+    "category": "Marketing"
+  },
+  {
+    "id": 9,
+    "title": "Graphic Design Masterclass",
+    "instructor": "Lindsay Marsh",
+    "duration": "14 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Expert level training in Photoshop, Illustrator, and InDesign.",
+  "image": "https://i.ibb.co/h1yg34bG/original.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 10,
+    "title": "Cyber Security Fundamentals",
+    "instructor": "Nathan House",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Protect systems from hackers and learn network security basics.",
+  "image": "https://i.ibb.co/s9q4qkq0/4870960-9c9f-7.jpg",
+    "category": "IT & Software"
+  },
+  {
+    "id": 11,
+    "title": "Next.js 14 Full Stack Development",
+    "instructor": "Maximilian Schwarzmüller",
+    "duration": "28 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Build SEO friendly applications with Server Components and SSR.",
+  "image": "https://i.ibb.co/PsNVLXpf/nextjs.webp",
+    "category": "Development"
+  },
+  {
+    "id": 12,
+    "title": "Mobile App Dev with Flutter",
+    "instructor": "Stephen Grider",
+    "duration": "35 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Create cross-platform apps for iOS and Android using Dart.",
+  "image": "https://i.ibb.co/21Y8Sx2g/flutter-Development-2-Soft-Software.jpg",
+    "category": "Development"
+  }
+]
