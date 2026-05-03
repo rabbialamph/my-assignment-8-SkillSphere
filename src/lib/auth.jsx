@@ -8,6 +8,7 @@ const db = client.db('better_auth_db_assignment8');
 
 export const auth = betterAuth({
 
+
   emailAndPassword: { 
     enabled: true, 
    }, 
