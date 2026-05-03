@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+SkillSphere – Online Learning Platform
 
-## Getting Started
+A modern, responsive online learning platform built with Next.js, where users can explore courses, view details, and enroll in skill-based programs such as Web Development, Design, Marketing, and more.
 
-First, run the development server:
+Live Demo
+ https://your-live-link.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Project Purpose
+SkillSphere is designed to provide a clean and modern learning experience where students can:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Browse courses
+View detailed course information
+Learn through structured curriculum
+Manage their profile
+Authenticate securely
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+ Key Features
+Authentication
+User Registration (Name, Email, Photo URL, Password)
+User Login system
+Google Social Login
+Secure session handling (BetterAuth)
+Protected routes (Course Details & Profile)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ Course System
+All Courses page with filtering & search
+Course Details page (Protected)
+Static curriculum structure
+Trending Courses section
+Instructor showcase
 
-## Learn More
+ Search & Filter
+Search courses by title
+Filter by category (Development, Design, Marketing, etc.)
 
-To learn more about Next.js, take a look at the following resources:
+ Profile System
+User profile page
+Update name & profile image
+Enrolled course stats UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ UI/UX
+Modern glassmorphism design
+Responsive for mobile, tablet & desktop
+Framer Motion animations
+Consistent SaaS-style UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Extra Features
+404 Not Found page
+Toast notifications
+Loading-friendly structure
+Clean navigation system
 
-## Deploy on Vercel
+ Tech Stack
+Next.js (App Router)
+React.js
+Tailwind CSS
+DaisyUI / HeroUI
+Framer Motion
+React Icons
+BetterAuth
+React Toastify
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ NPM Packages Used
+next
+tailwindcss
+framer-motion
+react-icons
+react-toastify
+@heroui/react
+gravity-ui/icons
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Responsiveness
+Fully responsive design:
+Mobile optimized
+Tablet friendly
+Desktop full UI
+
+Learning Outcomes
+Next.js App Router architecture
+Authentication system integration
+Protected routing
+Dynamic UI design system
+State management & filtering logic
+Responsive UI design

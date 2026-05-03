@@ -2,7 +2,6 @@ import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
 import { BiStar, BiUser } from "react-icons/bi";
 import { BsClock } from "react-icons/bs";
-import Image from "next/image";
 
 const AllCourseCard = ({ course }) => {
   console.log(course.image)
