@@ -2,8 +2,10 @@ import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
 import { BiStar, BiUser } from "react-icons/bi";
 import { BsClock } from "react-icons/bs";
+import Image from "next/image";
 
 const AllCourseCard = ({ course }) => {
+  console.log(course.image)
   return (
     <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/20 transition">
 
@@ -13,6 +15,8 @@ const AllCourseCard = ({ course }) => {
         <img
           src={course.image}
           alt={course.title}
+          height={300}
+          width={300}
           className="object-cover w-full h-full group-hover:scale-110 transition duration-500"
         />
 

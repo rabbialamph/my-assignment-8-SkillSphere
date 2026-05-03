@@ -33,6 +33,12 @@ const LoginPage = () => {
     console.log(data, error);
   };
 
+  const GoogleHandleSignIn = async () =>{
+    await authClient.signIn.social({
+      provider: 'google'
+    })
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 relative overflow-hidden">
 
@@ -128,7 +134,7 @@ const LoginPage = () => {
           <div className="flex-1 h-px bg-white/10"></div>
         </div>
         <div className="mb-4">
-         <button className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
+         <button onClick={GoogleHandleSignIn} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
            <FcGoogle size={22} />
            Login with Google
          </button>
