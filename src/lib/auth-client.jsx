@@ -1,7 +1,7 @@
 import { createAuthClient } from "better-auth/react";
 
 export const authClient = createAuthClient({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://my-assignment-8-skill-sphere-b4yb.vercel.app",
 });
 
 export const {
