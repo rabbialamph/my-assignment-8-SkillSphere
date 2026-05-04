@@ -95,10 +95,10 @@ const HeroBanner = () => {
             alt="hero"
             width={420}
             height={420}
-            className="relative z-10 drop-shadow-[0_0_40px_rgba(99,102,241,0.4)]"
+            className="relative z-10 rounded-2xl drop-shadow-[0_0_40px_rgba(99,102,241,0.4)]"
           />
 
-          <div className="absolute z-10 top-5 right-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
+          <div className="absolute z-10 -top-5 right-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
             <p className="text-xs text-gray-300">JavaScript</p>
             <div className="w-full h-2 bg-gray-700 rounded-full mt-2">
               <div className="w-[75%] h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
@@ -107,7 +107,7 @@ const HeroBanner = () => {
           </div>
 
 
-          <div className="absolute z-10 bottom-0 left-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
+          <div className="absolute z-10 -bottom-5 left-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
             <p className="text-xl font-bold flex items-center gap-1">4.8 <BiStar size={16} className="text-yellow-400 fill-yellow-400" /></p>
             <p className="text-xs text-gray-300">12K Reviews</p>
           </div>

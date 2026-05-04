@@ -34,9 +34,10 @@ const CourseSearch = ({ courses }) => {
     <div className="text-white">
 
 
-      <div className="flex md:flex-row gap-3 mt-10 items-center">
+      <div className="flex flex-col md:flex-row gap-3 mt-10 items-center">
 
         <SearchField >
+          <Label>Search</Label>
           <SearchField.Group className='p-6'>
             
             <SearchField.SearchIcon className="text-gray-400" />
@@ -57,10 +58,10 @@ const CourseSearch = ({ courses }) => {
 
           <button tabIndex={0} className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-indigo-500 transition cursor-pointer">
             <BiFilter size={20} />
-            Fillter
+            Fillter by category
           </button>
 
-          <div tabIndex="-1" className="dropdown-content menu right-0 mt-2 w-52 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl shadow-xl z-50">
+          <div tabIndex="-1" className="dropdown-content menu mt-2 w-52 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl shadow-xl z-50">
 
             {categories.map((cat, i) => (
               <button
