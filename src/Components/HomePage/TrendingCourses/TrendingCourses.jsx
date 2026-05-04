@@ -13,13 +13,10 @@ const trendingCourses = [
 
 const TrendingCourses = () => {
   return (
-    <section className="py-16 px-4 container mx-auto text-white relative">
-
-      <div className="absolute w-[400px] h-[400px] bg-indigo-600/20 blur-[120px] rounded-full top-0 left-0"></div>
-
+    <section className="py-8 px-4 container mx-auto text-white">
 
       <div className="flex justify-between items-center mb-10">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl md:text-4xl font-bold">
           Trending <span className="text-indigo-400">Courses</span>
         </h2>
       </div>

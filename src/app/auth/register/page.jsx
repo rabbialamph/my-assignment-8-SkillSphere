@@ -43,11 +43,7 @@ const RegisterPage = () => {
     }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 relative overflow-hidden">
-
-      <div className="absolute w-[400px] h-[400px] bg-indigo-600/20 blur-[120px] rounded-full top-0 left-0"></div>
-      <div className="absolute w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full bottom-0 right-0"></div>
-
+    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 overflow-hidden">
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -80,7 +76,7 @@ const RegisterPage = () => {
             <Input
               name="name"
               placeholder="Enter your name"
-              className="w-full mt-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
+              className="w-full mt-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
             />
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
@@ -99,7 +95,7 @@ const RegisterPage = () => {
             <Input
               name="email"
               placeholder="Enter your email"
-              className="w-full mt-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
+              className="w-full mt-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
             />
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
@@ -114,7 +110,7 @@ const RegisterPage = () => {
               name="photo"
               type="text"
               placeholder="Enter image URL"
-              className="w-full mt-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
+              className="w-full mt-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
             />
           </TextField>
 
@@ -142,17 +138,17 @@ const RegisterPage = () => {
             <Input
               name="password"
               placeholder="Enter your password"
-              className="w-full mt-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
+              className="w-full mt-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
             />
 
 
-            <Button
+            <button
               type="button"
               onClick={() => setIsVisible(!isVisible)}
-              className="absolute right-3 top-12 text-gray-400 hover:text-white transition"
+              className="absolute right-3 top-11 text-gray-400 hover:text-white transition"
             >
               {isVisible ? <BsEye size={18} /> : <BsEyeSlash size={18} />}
-            </Button>
+            </button>
 
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
@@ -160,7 +156,7 @@ const RegisterPage = () => {
 
           <Button
             type="submit"
-            className="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-[1.02] transition font-semibold shadow-lg"
+            className="w-full cursor-pointer py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-[1.02] transition font-semibold shadow-lg"
           >
             Register
           </Button>
@@ -173,7 +169,7 @@ const RegisterPage = () => {
           <div className="flex-1 h-px bg-white/10"></div>
         </div>
 
-        <Button onClick={GoogleHandleSignUp} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
+        <Button onClick={GoogleHandleSignUp} className="w-full cursor-pointer py-2 rounded-full bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
           <FcGoogle size={22} />
           Continue with Google
         </Button>

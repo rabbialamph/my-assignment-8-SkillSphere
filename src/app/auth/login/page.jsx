@@ -40,10 +40,9 @@ const LoginPage = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 overflow-hidden">
 
-      <div className="absolute w-[400px] h-[400px] bg-indigo-600/20 blur-[120px] rounded-full top-0 left-0"></div>
-      <div className="absolute w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full bottom-0 right-0"></div>
+   
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -77,7 +76,7 @@ const LoginPage = () => {
             <Input
               name="email"
               placeholder="Enter your email"
-              className="w-full mt-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
+              className="w-full mt-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
             />
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
@@ -104,24 +103,24 @@ const LoginPage = () => {
             <Input
               name="password"
               placeholder="Enter your password"
-              className="w-full mt-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
+              className="w-full mt-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-indigo-500 transition"
             />
 
 
-            <Button
+            <button
               type="button"
               onClick={() => setIsVisible(!isVisible)}
-              className="absolute right-3 top-12 text-gray-400 hover:text-white transition"
+              className="absolute right-3 top-11 text-gray-400 hover:text-white transition"
             >
               {isVisible ? <BsEye size={18} /> : <BsEyeSlash size={18} />}
-            </Button>
+            </button>
 
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
 
           <Button
             type="submit"
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-[1.02] transition font-semibold shadow-lg cursor-pointer"
+            className="w-full py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-[1.02] transition font-semibold shadow-lg cursor-pointer"
           >
             Login
           </Button>
@@ -134,7 +133,7 @@ const LoginPage = () => {
           <div className="flex-1 h-px bg-white/10"></div>
         </div>
         <div className="mb-4">
-         <Button onClick={GoogleHandleSignIn} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
+         <Button onClick={GoogleHandleSignIn} className="w-full cursor-pointer py-2 rounded-full bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
            <FcGoogle size={22} />
            Login with Google
          </Button>

@@ -2,6 +2,7 @@
 import CourseCard from "@/Components/HomePage/card/CourseCard";
 import HeroBanner from "@/Components/HomePage/HeroBanner";
 import LearningTips from "@/Components/HomePage/LearningTips/LearningTips";
+import StudentReview from "@/Components/HomePage/StudentReview/StudentReview";
 import TopInstructors from "@/Components/HomePage/TopInstructors/TopInstructors";
 import TrendingCourses from "@/Components/HomePage/TrendingCourses/TrendingCourses";
 
@@ -14,6 +15,7 @@ export default function Home() {
      <LearningTips></LearningTips>
      <TopInstructors></TopInstructors>
      <TrendingCourses></TrendingCourses>
+     <StudentReview></StudentReview>
    </div>
   );
 }

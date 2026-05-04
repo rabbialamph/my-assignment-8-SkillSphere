@@ -36,11 +36,10 @@ const instructors = [
 
 const TopInstructors = () => {
   return (
-    <section className="py-16 px-4 container mx-auto text-white relative">
-      <div className="absolute w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full top-0 right-0"></div>
+    <section className="py-16 px-4 container mx-auto text-white">
+     
 
-
-      <h2 className="text-3xl font-bold mb-10">
+      <h2 className="text-3xl  md:text-4xl font-bold mb-10">
         Top <span className="text-purple-400">Instructors</span>
       </h2>
 

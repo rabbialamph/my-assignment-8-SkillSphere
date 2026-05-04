@@ -12,7 +12,7 @@ const CourseCard = async () => {
         <div>
           <div className="flex justify-between mb-8">
             <h3 className="text-2xl font-bold">Popular Courses</h3>
-            <Link href='/courses'><p className="text-purple-800 cursor-pointer flex items-center">View All<BiRightArrowAlt></BiRightArrowAlt></p></Link>
+            <Link href='/courses'><p className="text-purple-500 cursor-pointer flex items-center">View All<BiRightArrowAlt></BiRightArrowAlt></p></Link>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
