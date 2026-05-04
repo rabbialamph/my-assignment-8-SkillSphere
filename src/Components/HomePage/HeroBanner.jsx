@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import { BiHeart, BiStar } from "react-icons/bi";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import heroImg from "../../../public/hero-image.png";
+import heroImg from "../../../public/hero-img.png";
 import { MdVideoLibrary } from "react-icons/md";
 
 
@@ -26,36 +25,6 @@ const lines = [
   },
 ];
 
-const stats = [
-  { value: 20, label: "Active Students", suffix: "K+" },
-  { value: 500, label: "Expert Instructors", suffix: "+" },
-  { value: 120, label: "Courses", suffix: "+" },
-  { value: 95, label: "Satisfaction", suffix: "%" },
-];
-
-const useCountUp = (end, duration = 1500) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-    const increment = end / (duration / 16);
-
-    const counter = setInterval(() => {
-      start += increment;
-
-      if (start >= end) {
-        clearInterval(counter);
-        setCount(end);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
-
-    return () => clearInterval(counter);
-  }, [end, duration]);
-
-  return count;
-};
 
 const HeroBanner = () => {
   return (
@@ -105,33 +74,16 @@ const HeroBanner = () => {
           <div className="flex gap-4 mt-8">
             
    
-            <button className="relative px-6 py-3 rounded-xl overflow-hidden group">
+            <button className="relative px-6 py-2 rounded-full overflow-hidden group">
               <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600"></span>
               <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-white/10 transition"></span>
               <span className="relative z-10">Explore Courses →</span>
             </button>
 
     
-            <button className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 hover:scale-105 transition duration-300 flex items-center gap-2">
+            <button className="px-6 py-2 rounded-full border border-white/20 hover:bg-white/10 hover:scale-105 transition duration-300 flex items-center gap-2">
              <MdVideoLibrary></MdVideoLibrary> Watch Demo
             </button>
-          </div>
-
-   
-          <div className="flex gap-4 mt-12 text-sm text-gray-400 flex-wrap">
-            {stats.map((stat, i) => {
-              const count = useCountUp(stat.value);
-
-              return (
-                <div key={i}>
-                  <p className="text-white font-bold text-xl">
-                    {count}
-                    {stat.suffix}
-                  </p>
-                  {stat.label}
-                </div>
-              );
-            })}
           </div>
         </div>
 
@@ -146,7 +98,7 @@ const HeroBanner = () => {
             className="relative z-10 drop-shadow-[0_0_40px_rgba(99,102,241,0.4)]"
           />
 
-          <div className="absolute top-5 right-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
+          <div className="absolute z-10 top-5 right-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
             <p className="text-xs text-gray-300">JavaScript</p>
             <div className="w-full h-2 bg-gray-700 rounded-full mt-2">
               <div className="w-[75%] h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
@@ -155,7 +107,7 @@ const HeroBanner = () => {
           </div>
 
 
-          <div className="absolute bottom-0 left-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
+          <div className="absolute z-10 bottom-0 left-0 bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-4 w-44 shadow-lg">
             <p className="text-xl font-bold flex items-center gap-1">4.8 <BiStar size={16} className="text-yellow-400 fill-yellow-400" /></p>
             <p className="text-xs text-gray-300">12K Reviews</p>
           </div>

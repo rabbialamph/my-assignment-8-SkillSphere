@@ -8,10 +8,7 @@ const page = () => {
     const { data } = useSession();
     const user = data?.user;
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 relative overflow-hidden">
-
-      <div className="absolute w-[400px] h-[400px] bg-indigo-600/20 blur-[120px] rounded-full top-0 left-0"></div>
-      <div className="absolute w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full bottom-0 right-0"></div>
+    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 py-4 overflow-hidden">
 
 
       <motion.div

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BiStar } from "react-icons/bi";
+import { BiRightArrowAlt, BiStar } from "react-icons/bi";
 
 const reviews = [
   {
@@ -40,10 +40,12 @@ const StudentReview = () => {
       <div className="container mx-auto mx-auto">
 
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">
+      <div className="flex justify-between items-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold">
           Student <span className="text-indigo-400">Reviews</span>
         </h2>
-
+          <p className="text-purple-500 cursor-pointer flex items-center">View All<BiRightArrowAlt></BiRightArrowAlt></p>
+      </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 

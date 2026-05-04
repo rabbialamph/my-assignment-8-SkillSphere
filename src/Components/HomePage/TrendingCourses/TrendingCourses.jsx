@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BiStar } from "react-icons/bi";
+import { BiRightArrowAlt, BiStar } from "react-icons/bi";
 
 const trendingCourses = [
   { id: 1, title: "Python for Beginners", rating: 4.6, image: "https://i.ibb.co/mVnRvfMT/Python-for-beginners.png" },
@@ -19,6 +19,7 @@ const TrendingCourses = () => {
         <h2 className="text-3xl md:text-4xl font-bold">
           Trending <span className="text-indigo-400">Courses</span>
         </h2>
+          <p className="text-purple-500 cursor-pointer flex items-center">View All<BiRightArrowAlt></BiRightArrowAlt></p>
       </div>
 
 

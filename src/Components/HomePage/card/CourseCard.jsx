@@ -11,7 +11,9 @@ const CourseCard = async () => {
     <div className="my-8 container mx-auto px-4">
         <div>
           <div className="flex justify-between mb-8">
-            <h3 className="text-2xl font-bold">Popular Courses</h3>
+            <h2 className="text-3xl  md:text-4xl font-bold">
+             Popular <span className="text-purple-400">Courses</span>
+           </h2>
             <Link href='/courses'><p className="text-purple-500 cursor-pointer flex items-center">View All<BiRightArrowAlt></BiRightArrowAlt></p></Link>
           </div>
 
