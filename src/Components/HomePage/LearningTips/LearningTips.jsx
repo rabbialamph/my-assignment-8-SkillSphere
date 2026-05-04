@@ -45,7 +45,7 @@ const LearningTips = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
             whileHover={{ y: -6 }}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex items-center gap-4 hover:shadow-2xl hover:shadow-indigo-500/10 transition"
+            className="bg-[#0f172a] backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex items-center gap-4 hover:shadow-2xl hover:shadow-indigo-500/10 transition"
           >
             
 

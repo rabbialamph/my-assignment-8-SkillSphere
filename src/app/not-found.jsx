@@ -7,12 +7,7 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4 relative overflow-hidden">
-
-
-      <div className="absolute w-[400px] h-[400px] bg-indigo-600/20 blur-[120px] rounded-full top-0 left-0"></div>
-      <div className="absolute w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full bottom-0 right-0"></div>
-
+    <div className="min-h-screen flex items-center justify-center bg-[#020617] text-white px-4  overflow-hidden">
 
       <div className="text-center max-w-xl w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-10 shadow-2xl relative z-10">
 

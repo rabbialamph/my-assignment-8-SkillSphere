@@ -13,7 +13,7 @@ const CardDesign = ({ course }) => {
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -8 }}
       transition={{ duration: 0.4 }}
-      className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/20 transition"
+      className="group bg-[#0f172a] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/20 transition"
     >
 
       <div className="relative h-48 w-full overflow-hidden">

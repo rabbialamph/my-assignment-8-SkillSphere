@@ -4,6 +4,7 @@ import { useState } from "react";
 import AllCourseCard from "@/Components/AllCoursesCard/AllCoursesCard";
 import { BiFilter, BiSearch } from "react-icons/bi";
 import { SlClose } from "react-icons/sl";
+import { Label, SearchField } from "@heroui/react";
 
 const CourseSearch = ({ courses }) => {
   const [search, setSearch] = useState("");
@@ -33,21 +34,23 @@ const CourseSearch = ({ courses }) => {
     <div className="text-white">
 
 
-      <div className="flex flex-col md:flex-row gap-4 mt-10 items-center">
+      <div className="flex md:flex-row gap-3 mt-10 items-center">
 
-        <div className="relative w-full">
-
-          <BiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search courses by title..."
-            className="w-full bg-white/5 backdrop-blur-xl border border-white/10 text-gray-100 rounded-2xl py-3 pl-12 pr-4 outline-none focus:border-indigo-500 transition"
-          />
-
-        </div>
+        <SearchField >
+          <SearchField.Group className='p-6'>
+            
+            <SearchField.SearchIcon className="text-gray-400" />
+        
+            <SearchField.Input
+              name="search"
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search courses by title..."
+            />
+        
+          </SearchField.Group>
+        </SearchField>
 
 
         <div className="dropdown dropdown-end">

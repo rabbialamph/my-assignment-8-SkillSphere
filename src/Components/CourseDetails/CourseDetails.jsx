@@ -13,10 +13,8 @@ const CourseDetails = ({ course }) => {
   return (
     <div className="max-w-7xl mx-auto p-4 md:p-6 text-white">
 
-      {/* 🔥 Banner */}
       <div className="relative overflow-hidden bg-gradient-to-r from-indigo-600/80 to-purple-600/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between shadow-xl">
 
-        {/* glow */}
         <div className="absolute w-[300px] h-[300px] bg-white/10 blur-3xl rounded-full top-0 left-0"></div>
 
         <div className="relative z-10">
@@ -33,13 +31,10 @@ const CourseDetails = ({ course }) => {
 
       </div>
 
-      {/* Content */}
       <div className="grid md:grid-cols-3 gap-6 mt-8">
 
-        {/* LEFT */}
         <div className="md:col-span-2 space-y-8">
 
-          {/* Info */}
           <div>
             <h2 className="text-2xl font-semibold text-white">
               {title}
@@ -69,7 +64,6 @@ const CourseDetails = ({ course }) => {
             </p>
           </div>
 
-          {/* What you will learn */}
           <div>
             <h3 className="text-lg font-semibold mb-4">
               What you will learn
@@ -100,12 +94,10 @@ const CourseDetails = ({ course }) => {
             </ul>
           </div>
 
-          {/* Curriculum */}
           <CourseCurriculum />
 
         </div>
 
-        {/* RIGHT SIDEBAR */}
         <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 h-fit shadow-xl">
 
           <h3 className="font-semibold mb-4 text-white">
@@ -136,12 +128,10 @@ const CourseDetails = ({ course }) => {
 
           </ul>
 
-          {/* Button */}
           <button className="mt-6 w-full px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-105 transition cursor-pointer">
             Enroll Now
           </button>
 
-          {/* Wishlist */}
           <button className="mt-4 w-full px-4 py-2 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition flex items-center justify-center gap-2 cursor-pointer">
             <FaHeart className="text-red-400" />
             Add to Wishlist
@@ -151,7 +141,6 @@ const CourseDetails = ({ course }) => {
 
       </div>
 
-      {/* Features */}
       <FeaturesBar />
 
     </div>

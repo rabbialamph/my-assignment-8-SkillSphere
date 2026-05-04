@@ -60,15 +60,19 @@ const Navbar = () => {
 
           {user ? (
             <>
-              <Avatar>
-                <Avatar.Image
-                className="rounded-full h-10 w-10"
-                alt= {user?.name}
-                src={user?.image}
-                referrerPolicy="no-referrer"
-                 />
-                <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
-              </Avatar>
+              <Link href="/profile">
+                <Avatar>
+                  <Avatar.Image
+                    className="rounded-full h-10 w-10"
+                    alt={user?.name}
+                    src={user?.image}
+                    referrerPolicy="no-referrer"
+                  />
+                  <Avatar.Fallback>
+                    {user?.name?.[0]}
+                  </Avatar.Fallback>
+                </Avatar>
+              </Link>
 
               <Button
               onClick={handleLogout}

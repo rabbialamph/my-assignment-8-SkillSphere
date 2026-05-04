@@ -1,6 +1,7 @@
 
 import CourseCard from "@/Components/HomePage/card/CourseCard";
-import HeroBanner from "@/Components/HomePage/HeroBanner";
+import FeaturesSection from "@/Components/HomePage/FeaturesSection/FeaturesSection";
+import HeroBanner from "@/Components/HomePage/HeroBanner/HeroBanner";
 import LearningTips from "@/Components/HomePage/LearningTips/LearningTips";
 import StatsBar from "@/Components/HomePage/StatsBar/StatsBar";
 import StudentReview from "@/Components/HomePage/StudentReview/StudentReview";
@@ -18,6 +19,7 @@ export default function Home() {
      <TopInstructors></TopInstructors>
      <TrendingCourses></TrendingCourses>
      <StudentReview></StudentReview>
+     <FeaturesSection></FeaturesSection>
    </div>
   );
 }

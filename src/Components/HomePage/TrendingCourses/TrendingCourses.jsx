@@ -32,7 +32,7 @@ const TrendingCourses = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             whileHover={{ y: -8 }}
             transition={{ delay: index * 0.1 }}
-            className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/10 transition cursor-pointer"
+            className="group bg-[#0f172a] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/10 transition cursor-pointer"
           >
 
             <div className="relative overflow-hidden">

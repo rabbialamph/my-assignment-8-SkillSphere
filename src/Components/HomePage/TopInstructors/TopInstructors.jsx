@@ -36,7 +36,7 @@ const instructors = [
 
 const TopInstructors = () => {
   return (
-    <section className="py-16 px-4 container mx-auto text-white">
+    <section className="py-8 px-4 container mx-auto text-white">
      
   
       <div className="flex justify-between items-center mb-10">
@@ -56,7 +56,7 @@ const TopInstructors = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
             whileHover={{ y: -8 }}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-4 text-center hover:shadow-2xl hover:shadow-purple-500/10 transition"
+            className="bg-[#0f172a] backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-4 text-center hover:shadow-2xl hover:shadow-purple-500/10 transition"
           >
 
 

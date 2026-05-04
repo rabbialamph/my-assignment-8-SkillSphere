@@ -6,7 +6,7 @@ import { BsClock } from "react-icons/bs";
 const AllCourseCard = ({ course }) => {
   console.log(course.image)
   return (
-    <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/20 transition">
+    <div className="group bg-[#0f172a] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/20 transition">
 
    
       <div className="relative h-48 w-full overflow-hidden">

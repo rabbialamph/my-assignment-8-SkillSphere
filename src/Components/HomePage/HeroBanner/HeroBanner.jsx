@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { BiHeart, BiStar } from "react-icons/bi";
+import { BiHeart, BiRightArrowAlt, BiStar } from "react-icons/bi";
 import { motion } from "framer-motion";
-import heroImg from "../../../public/hero-img.png";
+import heroImg from "../../../../public/hero-img.png";
 import { MdVideoLibrary } from "react-icons/md";
 
 
@@ -74,14 +74,14 @@ const HeroBanner = () => {
           <div className="flex gap-4 mt-8">
             
    
-            <button className="relative px-6 py-2 rounded-full overflow-hidden group">
+            <button className="relative px-4 py-2 rounded-full overflow-hidden group cursor-pointer">
               <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600"></span>
               <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-white/10 transition"></span>
-              <span className="relative z-10">Explore Courses →</span>
+              <span className="relative z-10 flex items-center gap-1">Explore Courses <BiRightArrowAlt></BiRightArrowAlt></span>
             </button>
 
     
-            <button className="px-6 py-2 rounded-full border border-white/20 hover:bg-white/10 hover:scale-105 transition duration-300 flex items-center gap-2">
+            <button className="px-4 py-2 rounded-full cursor-pointer border border-white/20 hover:bg-white/10 hover:scale-105 transition duration-300 flex items-center gap-2">
              <MdVideoLibrary></MdVideoLibrary> Watch Demo
             </button>
           </div>
