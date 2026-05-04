@@ -146,13 +146,13 @@ const RegisterPage = () => {
             />
 
 
-            <button
+            <Button
               type="button"
               onClick={() => setIsVisible(!isVisible)}
               className="absolute right-3 top-12 text-gray-400 hover:text-white transition"
             >
               {isVisible ? <BsEye size={18} /> : <BsEyeSlash size={18} />}
-            </button>
+            </Button>
 
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
@@ -173,10 +173,10 @@ const RegisterPage = () => {
           <div className="flex-1 h-px bg-white/10"></div>
         </div>
 
-        <button onClick={GoogleHandleSignUp} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
+        <Button onClick={GoogleHandleSignUp} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
           <FcGoogle size={22} />
           Continue with Google
-        </button>
+        </Button>
 
         <p className="text-center text-sm text-gray-400 mt-6">
           Already have an account?{" "}

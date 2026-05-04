@@ -3,7 +3,7 @@
 import { signOut, useSession,  } from "@/lib/auth-client";
 import NavLinks from "./NavLinks";
 import Link from "next/link";
-import { Avatar } from "@heroui/react";
+import { Avatar, Button } from "@heroui/react";
 
 const Navbar = () => {
 
@@ -63,18 +63,18 @@ const Navbar = () => {
               <Avatar>
                 <Avatar.Image
                 className="rounded-full h-10 w-10"
-                alt="John Doe" 
+                alt= {user?.name}
                 src={user?.image}
                 referrerPolicy="no-referrer"
                  />
                 <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
               </Avatar>
 
-              <button 
+              <Button
               onClick={handleLogout}
               className=" cursor-pointer sm:block px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-red-600 text-white transition">
                 Logout
-              </button>
+              </Button>
             </>
           ) : (
             <>

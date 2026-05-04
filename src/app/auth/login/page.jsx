@@ -108,23 +108,23 @@ const LoginPage = () => {
             />
 
 
-            <button
+            <Button
               type="button"
               onClick={() => setIsVisible(!isVisible)}
               className="absolute right-3 top-12 text-gray-400 hover:text-white transition"
             >
               {isVisible ? <BsEye size={18} /> : <BsEyeSlash size={18} />}
-            </button>
+            </Button>
 
             <FieldError className="text-red-400 text-xs font-medium" />
           </TextField>
 
-          <button
+          <Button
             type="submit"
             className="w-full py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:scale-[1.02] transition font-semibold shadow-lg cursor-pointer"
           >
             Login
-          </button>
+          </Button>
         </Form>
 
 
@@ -134,10 +134,10 @@ const LoginPage = () => {
           <div className="flex-1 h-px bg-white/10"></div>
         </div>
         <div className="mb-4">
-         <button onClick={GoogleHandleSignIn} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
+         <Button onClick={GoogleHandleSignIn} className="w-full cursor-pointer py-3 rounded-xl bg-white text-black hover:scale-[1.02] transition font-medium flex items-center justify-center gap-2">
            <FcGoogle size={22} />
            Login with Google
-         </button>
+         </Button>
         </div>
 
 
